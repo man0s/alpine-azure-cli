@@ -1,0 +1,9 @@
+
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t man0s/alpine-azure-cli .
+  - docker run -i --rm man0s/alpine-azure-cli az --help
