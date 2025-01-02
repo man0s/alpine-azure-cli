@@ -1,6 +1,6 @@
-FROM alpine:3.13
+FROM alpine:3.21
 
-ARG AZURE_CLI_VERSION=2.18.0
+ARG AZURE_CLI_VERSION=2.67.0
 
 # Install python/pip
 RUN apk add --no-cache curl tar openssl sudo bash jq python3 py3-pip
